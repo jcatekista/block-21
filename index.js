@@ -13,7 +13,16 @@ class ElectricCar extends Car {
     this.range = range;
   }
   getDescription() {
-    return this.make + " " + this.model + " " + this.year + " " + this.range;
+    return (
+      "Make - " +
+      this.make +
+      ", Model - " +
+      this.model +
+      ", Year - " +
+      this.year +
+      ", Range - " +
+      this.range
+    );
   }
 }
 const myCar = new ElectricCar("Tesla", "Model S", "2019", "300");
